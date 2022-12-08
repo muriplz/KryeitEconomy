@@ -5,14 +5,14 @@ import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraftforge.client.ClientRegistry;
 
-public class KeyInit {
-    public static KeyMapping exampleKeyMapping;
+public final class KeyInit {
+    public static KeyMapping openGuiKey;
 
     private KeyInit() {
     }
 
     public static void init() {
-        exampleKeyMapping = registerKey("example_key", KeyMapping.CATEGORY_GAMEPLAY, InputConstants.KEY_S);
+        openGuiKey = registerKey("mission_gui", KeyMapping.CATEGORY_GAMEPLAY, InputConstants.KEY_H);
     }
 
     private static KeyMapping registerKey(String name, String category, int keycode) {
